@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 04</title>
+
+    <script>
+        /*Generar una función que le ingrese por parámetro el valor del lado de un cuadrado
+        calcular su perímetro, su superficie, e informar los mismos en consola.*/
+
+        function calcularPerimetroYArea(valor){
+        var perimetro = lado * 4;
+        var superficie = lado * lado;
+        console.log("El cuadrado tiene " + perimetro + " de perimetro y " + superficie + " de superficie");
+        }
+
+        var lado=prompt("Ingrese la medida de un lado del cuadrado");
+        calcularPerimetroYArea(lado);
+    </script>
+</head>
+<body>
+    <p><a href="../index.html">Volver</a></p>
+</body>
+</html>

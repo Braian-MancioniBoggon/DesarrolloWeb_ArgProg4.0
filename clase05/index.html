@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Clase 05</title>
+    <script type="text/javascript" src="js/ejercicios.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <h3>Ejercicio N°01</h3>
+            <p>Crea un array que contenga el nombre de cinco colores escritos como strings.</p>
+            <button onclick="ejercicio01()">Ver resolucion en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°02</h3>
+            <p>Guarda en una variable el tercer elemento del array del ejercicio anterior.</p>
+            <button onclick="ejercicio02()">Ver resolucion en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°03</h3>
+            <p>Accede desde un console.log() a la posición 0 del string de la posición 0 del array del
+                ejercicio 1.</p>
+                <button onclick="ejercicio03()">Ver resolucion en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°04</h3>
+            <p>Se pide realizar un script que genere un número aleatorio entre 1 y 99. Investigue la
+                función Math.random().</p>
+                <button onclick="ejercicio04()">Ver resolucion en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°05</h3>
+            <p>Rellena un array con los números del 1 al 10. Muéstralo por la consola.</p>
+            <button onclick="ejercicio05()">Ver resolucion en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°06</h3>
+            <p>Rellena un array con números aleatorios (10 por ejemplo). Muéstralo por la consola.</p>
+            <button onclick="ejercicio06()">Ver resolucion en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°07</h3>
+            <p>Del array anterior, créale una copia (que no sea el mismo en sí). Mostrarlos por la consola.</p>
+            <button onclick="ejercicio07()">Ver resolucion en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°08</h3>
+            <p>Realiza un script que pida cadenas de texto hasta que se ingrese la palabra “cancelar”.
+                Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión
+                medio. Realizar la misma actividad, pero ahora almacenando los valores en un array y
+                luego recorriendolo para mostrar el resultado deseado del ejercicio.</p>
+            <button onclick="ejercicio08Variable()">Ver resolucion de variable en consola</button>
+            <button onclick="ejercicio08Arreglo()">Ver resolucion de arreglo en consola</button>
+        </li>
+        <li>
+            <h3>Ejercicio N°09</h3>
+            <p>Hacer un formulario con dos campos (pesos y dólares) que al presionar un botón
+                convierte de dólares a pesos. Supondremos que un dólar son trescientos pesos.
+                Mostrar el resultado elemento de html.</p>
+            <input type="number" id="dolaresEjercicio09" placeholder="Dolares">
+            <button onclick="ejercicio09()">Convertir</button>
+            <input type="number" id="pesosEjercicio09" placeholder="Pesos" disabled>
+        </li>
+        <li>
+            <h3>Ejercicio N°10</h3>
+            <p>Generar la inversa del ejercicio anterior (de pesos a dólares).</p>
+            <input type="number" id="pesosEjercicio10" placeholder="Pesos">
+            <button onclick="ejercicio10()">Convertir</button>
+            <input type="number" id="dolaresEjercicio10" placeholder="Dolares" disabled>
+        </li>
+        <li>
+            <h3>Ejercicio N°11</h3>
+            <p>Hacer un formulario que convierta de grados centígrados a grados Fahrenheit. Para
+                ello deberá multiplicar por 9/5 y sumar 32. Tener en cuenta que 30 grados centígrados
+                son 86 grados fahrenheit.</p>
+            <input type="number" id="celsius" placeholder="Grados Celsius">
+            <button onclick="ejercicio11()">Convertir</button>
+            <input type="number" id="fahrenheit" placeholder="Grados Fahrenheit" disabled>
+        </li>
+        <li>
+            <h3>Ejercicio N°12</h3>
+            <p>Hacer un formulario para solicitar el envío de una caja de cartón. En el formulario
+                podremos especificar las características de la caja. Ejemplo:</p>
+            <img src="img/ejemplo.jpg" id="imagenEjercicio12" alt="Ejemplo"><br>
+            <button onclick="verEjercicio12()" id="botonVerEjercicio12">Ver resolución</button>
+            <button onclick="ocultarEjercicio12()" id="botonOcultarEjercicio12">Ocultar resolución</button><br>
+            <div id="formularioEjercicio12">
+                <label>Nombre del cliente:</label><br>
+                <input type="text" id="campoNombre"><br>
+                <label>Material de la caja:</label>
+                <select id="campoMaterial">
+                    <option>Madera</option>
+                    <option>Carton</option>
+                </select><br>
+                <label>Seleccione las dimensiones de la caja:</label><br>
+                <div id="campoDimensiones">
+                    <input type="radio" id="diminuta" name="dimensiones" value="diminuta">
+                    <label for="diminuta">Diminuta</label>
+                </div>
+                <div>
+                    <input type="radio" id="mediana" name="dimensiones" value="mediana">
+                    <label for="mediana">Mediana</label>
+                </div>
+                <div>
+                    <input type="radio" id="grande" name="dimensiones" value="grande">
+                    <label for="grande">Grande</label>
+                </div>
+                <label>Comentarios</label><br>
+                <textarea id="campoComentario"></textarea><br>
+                <button onclick="ejercicio12()">Enviar</button>
+                <input id="campoMensaje" type="text" disabled>
+            </div>
+        </li>
+        <li>
+            <h3>Ejercicio N°13</h3>
+            <p>A través de un formulario, el usuario debe introducir un número secreto que estará entre 0 y 5.
+                El usuario tendrá tres intentos para acertar el número, si no lo logra, habrá perdido el juego.
+                Debemos indicar en un cuadro de texto si el usuario gana, falla el número o pierde.</p>
+                <label for="inputSuerte">Adivine el numero entre 0 y 5</label><br>
+                <input type="number" id="inputSuerte" placeholder="Número">
+                <button id="ejercicio13Suerte" onclick="ejercicio13()">Probar suerte</button>
+                <button id="ejercicio13VerNumero" onclick="ejercicio13VerNumero()">Ver número de la suerte en consola</button>
+                <button id="ejercicio13Reiniciar" onclick="ejercicio13Reiniciar()">Reiniciar</button>
+                <p id="avisos">Tiene 3 intentos.</p>
+        </li>
+        <li>
+            <h3>Ejercicio N°14</h3>
+            <p>Dado un input y un botón, escribir nombres de personas e ir mostrando en una lista
+                desordenada a medida que se agregan.</p>
+            <input type="text" id="inputNombres" placeholder="Nombre y apellido">
+            <button onclick="ejercicio14Agregar()">Agregar</button>
+            <button id="botonEliminarNombres" onclick="ejercicio14Reiniciar()">Eliminar nombres</button>
+            <ul id="listaDeNombres"></ul>
+        </li>
+    </ul>
+</body>
+</html>

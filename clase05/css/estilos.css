@@ -1,0 +1,28 @@
+#formularioEjercicio12{
+    display: none;
+}
+
+#botonOcultarEjercicio12{
+    display: none;
+    margin-bottom: 20px;
+}
+
+#ejercicio13Reiniciar{
+    display: none;
+}
+
+#botonEliminarNombres{
+    display: none;
+}
+
+#campoMensaje{
+    width: 700px;
+}
+
+#inputSuerte{
+    width: 185px;
+}
+
+.listaDeNombres{
+    margin-top: 10px;
+}

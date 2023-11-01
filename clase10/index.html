@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Clase 10</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°01</h3>
+            <p>Genera un array de números aleatorios, ordenarlos y mostrarlo en una lista desordenada. Tiene que crear la lista uno mismo.</p>
+        </div>
+        <div class="resolucion">
+            <button id="botonEjercicio1">Probar</button>
+            <div id="contenedorEjercicio1"></div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°02</h3>
+            <p>Dado el array = [1,2,3,4,5,6]:
+                <ol>
+                    <li>Iterar por todos los elementos dentro de un array utilizando while y mostrarlos en pantalla.</li>
+                    <li>Iterar por todos los elementos dentro de un array utilizando for y mostrarlos en pantalla.</li>
+                    <li>Iterar por todos los elementos dentro de un array utilizando .forEach y mostrarlos en pantalla.</li>
+                    <li>Mostrar todos los elementos dentro de un array sumándole uno a cada uno.</li>
+                    <li>Generar una copia de un array pero con todos los elementos incrementados en 1.</li>
+                    <li>Calcular el promedio</li>
+                </ol>
+            </p>
+        </div>
+        <div class="resolucion">
+            <button id="whileEjercicio2">1 - While</button>
+            <button id="forEjercicio2">2 - For</button>
+            <button id="forEachEjercicio2">3 - ForEach</button>
+            <button id="sumandoEjercicio2">4 - Sumando 1</button>
+            <button id="copiaEjercicio2">5 - Copia sumando 1</button>
+            <button id="promedioEjercicio2">6 - Promedio</button>
+            <div><ul id="contenedorEjercicio2"></ul></div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°03</h3>
+            <p>Dado un array de números, mostrar cómo quedaría si cada uno de los números es elevado al cuadrado.</p>
+        </div>
+        <div class="resolucion">
+            <button id="botonEjercicio3">Probar</button>
+            <div class="flex">
+                <ul id="contenedorEjercicio3_1"></ul>
+                <ul id="contenedorEjercicio3_2"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°04</h3>
+            <p>Dado el array [ 1, -4, 12, 0, -3, 29, -150], hacer la suma solo de sus números positivos.</p>
+        </div>
+        <div class="resolucion">
+            <button id="botonEjercicio4">Probar</button>
+            <div><ul id="contenedorEjercicio4"></ul></div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°05</h3>
+            <p>Dado el array ["Florencia", "Lucas", "Ezequiel", "Matias", "Bruno", "Gustavo", "Martin"]:
+                <ol>
+                    <li>Obtener aquellos nombres con al menos 6 letras.</li>
+                    <li>Obtener los nombres que comienzan con "M".</li>
+                    <li>Ordenar alfabéticamente y mostrar por consola.</li>
+                    <li>Generar un array que contenga solo las iniciales.<br>Ejemplo: ["F", "L", "E", "M",... ].</li>
+                    <li>Generar un array que contenga todos los nombres en mayúscula.</li>
+                    <li>Queremos saber si alguno de estos nombres comienza con "J”.</li>
+                </ol>
+            </p>
+        </div>
+        <div class="resolucion">
+            <button id="punto1Ejercicio5">Punto 1</button>
+            <button id="punto2Ejercicio5">Punto 2</button>
+            <button id="punto3Ejercicio5">Punto 3</button>
+            <button id="punto4Ejercicio5">Punto 4</button>
+            <button id="punto5Ejercicio5">Punto 5</button>
+            <button id="punto6Ejercicio5">Punto 6</button>
+            <div><ul id="contenedorEjercicio5"></ul></div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°06</h3>
+            <p>Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "café", "rosa"] determinar si un color introducido por el usuario a través de un prompt se encuentra dentro del array o no.</p>
+        </div>
+        <div class="resolucion">
+            <button id="botonEjercicio6">Probar</button>
+            <div><ul id="contenedorEjercicio6"></ul></div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°07</h3>
+            <p>Crear una función que reciba un arreglo con números y devuelva un nuevo arreglo con solo los números pares.</p>
+        </div>
+        <div class="resolucion">
+            <button id="botonEjercicio7">Probar</button>
+            <div class="flex">
+                <ul id="contenedorEjercicio7_1"></ul>
+                <ul id="contenedorEjercicio7_2"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°08</h3>
+            <p>Crear una función que reciba un arreglo con palabras, crear un nuevo arreglo que contenga sólo las palabras que empiezan con una vocal.</p>
+        </div>
+        <div class="resolucion">
+            <button id="botonEjercicio8">Probar</button>
+            <div class="flex">
+                <ul id="contenedorEjercicio8_1"></ul>
+                <ul id="contenedorEjercicio8_2"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°09</h3>
+            <p>Crear un método que permite intercambiar las posiciones de dos elementos de un arreglo en base a sus índices.</p>
+        </div>
+        <div class="resolucion">
+            <button id="botonEjercicio9">Probar</button>
+            <div class="flex">
+                <ul id="contenedorEjercicio9_1"></ul>
+                <ul id="contenedorEjercicio9_2"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°10</h3>
+            <p>Crear dos párrafos en el body de una página. Capturar el evento click solo del primero utilizando la librería jQuery.</p>
+        </div>
+        <div class="resolucion">
+            <p class="ejercicio10">Este es el parrafo N°1</p>
+            <p class="ejercicio10">Este es el parrafo N°2</p>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°11</h3>
+            <p>Confeccionar una página que muestre una tabla con dos filas y cambiar el color de fondo cuando sea presionada con el mouse.</p>
+        </div>
+        <div class="resolucion">
+            <table class="tablaEjercicio">
+                <tr>
+                    <td class="tdEjercicio11">Fila 1</td>
+                </tr>
+                <tr>
+                    <td class="tdEjercicio11">Fila 2</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°12</h3>
+            <p>Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. Para ocultar un elemento jQuery tiene un método llamado hide().</p>
+        </div>
+        <div class="resolucion">
+            <ul>
+                <li class="listaEjercicio12">Elemento 1</li>
+                <li class="listaEjercicio12">Elemento 2</li>
+                <li class="listaEjercicio12">Elemento 3</li>
+                <li class="listaEjercicio12">Elemento 4</li>
+            </ul>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°13</h3>
+            <p>Confeccionar una página que muestre dos tablas con tres filas cada una. Cambiar el color de fondo de cada fila de la primera tabla cuando sea presionada con el mouse.</p>
+        </div>
+        <div class="resolucion flex">
+            <table class="tablaEjercicio">
+                <tr>
+                    <td class="tdEjercicio13">Fila 1</td>
+                </tr>
+                <tr>
+                    <td class="tdEjercicio13">Fila 2</td>
+                </tr>
+                <tr>
+                    <td class="tdEjercicio13">Fila 3</td>
+                </tr>
+            </table>
+            <table class="tablaEjercicio">
+                <tr>
+                    <td>Fila 1</td>
+                </tr>
+                <tr>
+                    <td>Fila 2</td>
+                </tr>
+                <tr>
+                    <td>Fila 3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°14</h3>
+            <p>Disponer un título de noticia y seguidamente la descripción de la noticia (encerrarlo en un div con un nombre de clase), repetir esto para tres noticias. Agregar tres botones que rescaten el nombre de la clase para la descripción de la noticia y cambien su tamaño de fuente.</p>
+        </div>
+        <div class="resolucion flex">
+            <div>
+                <h3>Noticia </h3>
+                <p>descripción</p>
+                <button class="botonEjercicio14">Zoom al titulo</button>
+            </div>
+            <div>
+                <h3>Noticia </h3>
+                <p>descripción</p>
+                <button class="botonEjercicio14">Zoom al titulo</button>
+            </div>
+            <div>
+                <h3>Noticia </h3>
+                <p>descripción</p>
+                <button class="botonEjercicio14">Zoom al titulo</button>
+            </div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°15</h3>
+            <p>Crear una página que contenga dos tablas de 3 filas y 3 columnas cada una con un texto en cada casillero. Luego al presionar un botón cambiar por la cadena "-" solo el contenido de la primera tabla, dejando intacto el de la segunda.</p>
+        </div>
+        <div class="resolucion flex">
+            <button class="botonEjercicio15">Modificar primer tabla</button>
+            <table class="tablaEjercicio tablaEjercicio15">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+            <table class="tablaEjercicio">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°16</h3>
+            <p>Definir un hipervínculo con la propiedad href con cadena vacía. Luego disponer tres botones que permitan fijar distintos hipervínculos para la propiedad href. Además actualizar el texto del hipervínculo.</p>
+        </div>
+        <div class="resolucion">
+            <a href="" target="_blank" class="hipervinculoEjercicio16">Hipervinculo</a>
+            <button class="googleEjercicio16">Google</button>
+            <button class="instagramEjercicio16">Instagram</button>
+            <button class="facebookEjercicio16">Facebook</button>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°17</h3>
+            <p>Confeccionar una página que contenga algunas palabras con el elemento 'strong', luego cuando sean presionadas ocultarlas.</p>
+        </div>
+        <div class="resolucion">
+            <p class="textoEjercicio17">Lorem, ipsum<strong> dolor sit amet consectetur adipisicing elit</strong>. Consequuntur nulla modi nam laboriosam<strong> repudiandae quaerat quo amet dolores accusantium ex necessitatibus</strong> ipsa quod vero, laborum fuga magnam perspiciatis facilis sed?</p>
+            <button class="botonEjercicio17">Ocultar palabras resaltadas</button>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°18</h3>
+            <p>Crear una tabla con dos filas y dos columnas, cambiar el color del interior de la casilla cuando ingresamos con el mouse y dejarla con dicho color cuando retiramos la flecha.</p>
+        </div>
+        <div class="resolucion">
+            <table class="tablaEjercicio">
+                <tr>
+                    <td class="tdEjercicio18">1</td>
+                    <td class="tdEjercicio18">2</td>
+                </tr>
+                <tr>
+                    <td class="tdEjercicio18">3</td>
+                    <td class="tdEjercicio18">4</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°19</h3>
+            <p>Crear una tabla con dos filas y dos columnas, cambiar el color del interior de la casilla cuando ingresamos con el mouse y regresar al original cuando salimos.</p>
+        </div>
+        <div class="resolucion">
+            <table class="tablaEjercicio">
+                <tr>
+                    <td class="tdEjercicio19">1</td>
+                    <td class="tdEjercicio19">2</td>
+                </tr>
+                <tr>
+                    <td class="tdEjercicio19">3</td>
+                    <td class="tdEjercicio19">4</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°20</h3>
+            <p>Disponer un div de 800 x 70 píxeles. Al hacer doble clic redimensionarlo a 250 x 250 píxeles y si se hace doble clic nuevamente retornar al tamaño 800 x 70.</p>
+        </div>
+        <div class="resolucion">
+            <div class="divEjercicio20"></div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°21</h3>
+            <p>Confeccionar una página que contenga un div con un conjunto de párrafos. Cuando se presione con el mouse dentro del div ocultarlo lentamente y cuando esté completamente oculto hacer que aparezca lentamente otro bloque de texto.</p>
+        </div>
+        <div class="resolucion">
+            <div class="divEjercicio21">
+                <p class="pEjercicio21_1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="pEjercicio21_2">Consequuntur nulla modi nam laboriosam repudiandae quaerat.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°22</h3>
+            <p>Mostrar con console.log el valor de un option cada vez que un usuario seleccione un option nuevo de un elemento select.</p>
+        </div>
+        <div class="resolucion">
+            <select class="selectEjercicio22">
+                <option value="Numero 1">Numero 1</option>
+                <option value="Numero 2">Numero 2</option>
+                <option value="Numero 3">Numero 3</option>
+            </select>
+            <p id="consolaEjercicio22"></p>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°23</h3>
+            <p>Hacer que un link no salga de la página al hacer click, pero mostrar el valor de la página referida con console.log.</p>
+        </div>
+        <div class="resolucion">
+            <a href="www.google.com" class="hipervinculoEjercicio23">Google</a>
+            <p id="consolaEjercicio23"></p>
+        </div>
+    </div>
+    <div class="ejercicio flex">
+        <div class="enunciado">
+            <h3>Ejercicio N°24</h3>
+            <p>Hacer que un formulario no se envíe al hacer click en "enviar", en lugar de eso mostrar un texto en la página que el formulario fue enviado.</p>
+        </div>
+        <div class="resolucion">
+            <p id="formularioEnviado">Formulario enviado</p>
+            <form id="formulario">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/ejercicios.js"></script>
+</body>
+</html>

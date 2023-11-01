@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: #22193F;
+  background-image: url(../src/ondas.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#contenedorLogin {
+  min-height: 500px;
+  height: 100vh;
+}
+
+#imagenLogin {
+  background-image: url(../src/img-login.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imagenLogin img {
+  height: 60px;
+}
+
+#formularioLogin {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+#formularioLogin form {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  width: 400px;
+  gap: 15px;
+}
+#formularioLogin form h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  font-weight: 900;
+  color: #22193F;
+}
+#formularioLogin form input {
+  border-radius: 50px;
+  padding: 8px;
+  border-color: #C4C4C4;
+}
+#formularioLogin form input::-moz-placeholder {
+  font-family: "bootstrap-icons";
+}
+#formularioLogin form input::placeholder {
+  font-family: "bootstrap-icons";
+}
+#formularioLogin form a {
+  color: #E21982;
+  text-align: end;
+  font-weight: 700;
+}
+#formularioLogin form button {
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #E21982;
+  margin-top: 50px;
+  padding: 8px;
+  border: 0px;
+  font-weight: 700;
+}
+
+*:focus {
+  outline: none;
+}
+
+.input-group {
+  border: 2px;
+  border-radius: 50px;
+  border-color: #C4C4C4;
+  border-style: solid;
+  display: flex;
+}
+.input-group span {
+  background-color: transparent;
+  border: 0px;
+}
+.input-group span i {
+  color: #6A2A83;
+}
+.input-group input {
+  border: 0px;
+  flex-grow: 1;
+}/*# sourceMappingURL=style.css.map */

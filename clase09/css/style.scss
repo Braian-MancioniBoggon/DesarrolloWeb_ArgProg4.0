@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+$tamaño:500px;
+$titulo:28px;
+$texto:16px;
+$margin:50px;
+$padding: 8px;
+$colorIconos: #6A2A83;
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: #22193F;
+    background-image: url(../src/ondas.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#contenedorLogin{
+    min-height: $tamaño;
+    height: 100vh;
+}
+
+#imagenLogin{
+    img{
+        height: 60px;
+    }
+    background-image: url(../src/img-login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: $tamaño;
+    height: $tamaño;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formularioLogin{
+    form{
+        h2{
+            font-size: $titulo;
+            margin-bottom: $margin;
+            font-weight: 900;
+            color: #22193F;
+        }
+        input{
+            border-radius: 50px;
+            padding: $padding;
+            border-color: #C4C4C4;
+        }
+        a{
+            color: #E21982;
+            text-align: end;
+            font-weight: 700;
+        }
+        button{
+            border-radius: 50px;
+            color: #ffffff;
+            background-color: #E21982;
+            margin-top: $margin;
+            padding: $padding;
+            border: 0px;
+            font-weight: 700;
+        }
+        display: flex;
+        flex-direction: column;
+        font-size: $texto;
+        width: 400px;
+        gap: 15px;
+    }
+    width: $tamaño;
+    height: $tamaño;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+*:focus {
+    outline: none;
+}
+
+.input-group{
+    border: 2px;
+    border-radius: 50px;
+    border-color: #C4C4C4;
+    border-style: solid;
+    display: flex;
+    span{
+        background-color: transparent;
+        border: 0px;
+        i{
+            color: #6A2A83;
+        }
+    }
+    input{
+        border: 0px;
+        flex-grow: 1;
+    }
+}

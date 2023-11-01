@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 09</title>
+
+    <script>
+        /*Se pide que un usuario ingrese una nota numérica de un alumno. Muestra la
+        calificación resultante según la nota ingresada:
+        0-3: Muy deficiente
+        3-5: Insuficiente
+        5-6: Suficiente
+        6-7: Bien
+        7-9: Notable
+        9-10: Sobresaliente*/
+
+        var nota = prompt("Ingrese una nota del 0 al 10 para ver la calificacion");
+        if (nota >= 0 && nota < 3){
+            console.log("Muy deficiente");
+        } else if (nota >= 3 && nota < 5){
+            console.log("Insuficiente");
+        } else if (nota >= 5 && nota < 6){
+            console.log("Suficiente");
+        } else if (nota >= 6 && nota < 7){
+            console.log("Bien");
+        } else if (nota >= 7 && nota < 9){
+            console.log("Notable");
+        } else if (nota >= 9 && nota < 10){
+            console.log("Sobresaliente");
+        } else {
+            console.log("El valor ingresado no es valido, recargue la pagina");
+        }
+    </script>
+</head>
+<body>
+    <p><a href="../index.html">Volver</a></p>
+</body>
+</html>

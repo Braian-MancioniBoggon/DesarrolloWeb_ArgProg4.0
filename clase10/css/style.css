@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.ejercicio{
+    height: fit-content;
+    border-top: solid 1px;
+    padding: 15px;
+}
+
+.enunciado{
+    width: 600px;
+    margin-right: 50px;
+}
+
+.resolucion{
+    width: 800px;
+}
+
+.tablaEjercicio td{
+    border: solid 1px;
+    border-color: #000000;
+    padding: 10px;
+}
+
+.divEjercicio20{
+    height: 70px;
+    width: 800px;
+    background-color: #d2d2d2;
+}
+
+.pEjercicio21_2{
+    display: none;
+}
+
+#formularioEnviado{
+    display: none;
+}

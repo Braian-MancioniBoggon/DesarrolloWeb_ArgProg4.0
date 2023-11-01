@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    background-image: url(../src/bg-palm.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#contenedor{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nombrePerfil p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#contenedorLinks{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#links{
+    padding: 0;
+    width: 500px;
+}
+
+#links li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#links li i{
+    place-items: start;
+    font-size: 32px;
+    color: turquoise;
+}
+
+#links li p{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+}
+
+#redesSociales{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 45px;
+}

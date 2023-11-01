@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+
+    <script>
+        /*Se pide realizar un script para una tienda de coches: Si el coche a la venta es un Ford
+        Fiesta (código "fiesta"), el descuento es de un 5%. Si el coche a la venta es un Ford
+        Focus (código "focus"), el descuento es del 10%. El usuario introduce el artículo a
+        través de su código y el script saca el descuento correspondiente por la consola*/
+
+        function calcularDescuento(auto,porcentaje){
+            var valorAuto = 500000;
+            console.log("El valor del auto " + auto + " es $" + valorAuto + " y con el descuento de " + porcentaje + "% queda en $" + (valorAuto - ((porcentaje/100)*valorAuto)));
+        }
+
+        var codigo=prompt("Ingrese el codigo del auto");
+        switch(codigo){
+            case "fiesta": calcularDescuento("Ford Fiesta", 5); break;
+            case "focus": calcularDescuento("Ford Focus", 10); break;
+            default: console.log("Actualmente solo quedan en stock Ford Fiesta (codigo: fiesta) y Ford Focus (codigo: focus). Recargue la pagina"); break;
+        }
+    </script>
+</head>
+<body>
+    <p><a href="../index.html">Volver</a></p>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+input {
+  margin: 10px 0px 20px 0px;
+  width: 100%;
+  padding: 10px;
+}
+
+.separar {
+  padding-bottom: 60px;
+}
+
+.border {
+  border: solid 2px;
+}
+
+.centrar-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.padding-div {
+  padding: 30px;
+}
+
+.margin-right-0 {
+  margin-right: 0px;
+}
+
+.marginar-derecha {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.boton {
+  background-color: #424099;
+  color: #ffffff;
+  width: 150px;
+}
+
+.contenedorBotonForm {
+  padding: 0px;
+}
+
+#menuUl {
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#imagenCabecera {
+  align-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0px;
+}
+#imagenCabecera img {
+  width: 100%;
+}
+
+#tituloContainer {
+  margin-bottom: 50px;
+}
+
+#formularioContainer {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 200px;
+}
+
+footer {
+  text-align: center;
+}
+footer #footerLinea1 {
+  padding: 100px 0px;
+  background-color: #ededed;
+}
+footer i {
+  font-size: 50px;
+  color: #424099;
+}
+footer #footerLinea2 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: #cccccc;
+}
+footer #footerLinea2 p {
+  font-size: 12px;
+}
+footer .derecha {
+  text-align: right;
+}
+footer .izquierda {
+  text-align: left;
+}
+footer .descripcionIcono {
+  padding: 0px;
+  margin: 0px;
+}/*# sourceMappingURL=style.css.map */

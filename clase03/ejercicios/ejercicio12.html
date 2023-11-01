@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+
+    <script>
+        /*Generar una función donde ingresen dos números, el primero corresponde a la
+        cantidad de bultos en stock y el segundo a la cantidad de bultos que se pueden
+        colocar en una caja. Calcule cuántas cajas completas se pueden llenar con los bultos
+        disponibles y cuantos bultos sueltos quedarían. Mostrar ambos resultados en consola.*/
+
+        function calcularCajas(contenido,capacidadCaja){
+            var cantidadDeCajas= 0;
+            var contenidoSinCaja= 0;
+
+            for (var i=0; i<contenido; i++){
+                contenidoSinCaja++;
+                if (contenidoSinCaja == capacidadCaja){
+                    cantidadDeCajas++;
+                    contenidoSinCaja = 0;
+                }
+            }
+
+            console.log("Son " + cantidadDeCajas + " cajas completas y quedan " + contenidoSinCaja + " sin caja");
+        }
+
+        var bultos = prompt("Ingrese la cantidad de bultos");
+        var bultosPorCaja = prompt("Ingrese la capacidad de la caja");
+        calcularCajas(bultos,bultosPorCaja);
+    </script>
+</head>
+<body>
+    <p><a href="../index.html">Volver</a></p>
+</body>
+</html>

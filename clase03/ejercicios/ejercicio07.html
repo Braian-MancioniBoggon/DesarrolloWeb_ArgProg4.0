@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 07</title>
+
+    <script>
+        /*Dado una cadena de caracteres ingresada por el usuario, se pide realizar un script que
+        indique si ese texto es un palíndromo. Ejemplo de palíndromo: “Somos o no somos”.*/
+
+        var texto=prompt("Ingrese palabra o frace para verificar");
+        var textoInvertido="";
+        for (var i=0; i<texto.length ; i++){
+            textoInvertido = texto.charAt(i)+textoInvertido;
+        }
+        if (texto===textoInvertido){
+            console.log(texto + " es palindromo");
+        } else {
+            console.log(texto + " no es palindromo");
+        }
+    </script>
+</head>
+<body>
+    <p><a href="../index.html">Volver</a></p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+
+    <script>
+        /*Generar una función que le ingresen por parámetro dos valores distintos en dos
+        variables a y b, luego el valor ingresado en a pasarlo a b y el valor Ingresado en b,
+        Pasarlo a a y mostrarlos.*/
+
+        function intercambiarDatos(dato1,dato2){
+        var intercambio="";
+        console.log("Dato N°1: " + dato1);
+        console.log("Dato N°2: " + dato2);
+        console.log("--------------------")
+        console.log("Intercambiando datos")
+        console.log("--------------------")
+        intercambio=dato1;
+        dato1=dato2;
+        dato2=intercambio;
+        console.log("Dato N°1: " + dato1);
+        console.log("Dato N°2: " + dato2);
+        }
+
+        var valor1=prompt("Ingrese el dato N°1");
+        var valor2=prompt("Ingrese el dato N°2");
+        intercambiarDatos(valor1,valor2);
+    </script>
+</head>
+<body>
+    <p><a href="../index.html">Volver</a></p>
+</body>
+</html>

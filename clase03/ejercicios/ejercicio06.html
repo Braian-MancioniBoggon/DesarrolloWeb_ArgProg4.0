@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+
+    <script>
+        /*Realizar una función que calcule el factorial de un número ingresado por el usuario (el
+        número no puede ser mayor de 10, realizar la validación). Mostrar el resultado por la
+        consola.*/
+
+        function calcularFactorial (numero){
+            if (numero <= 10 && numero > 0){
+                var factorial=1;
+                for (var i=0; i<numero; i++){
+                    factorial=factorial*(i+1);
+                }
+                console.log("El factorial de " + numero + " es " + factorial);
+            } else {
+                console.log("El valor ingresado no es valido, recargue la pagina");
+            }
+        }
+
+        var numeroIngresado = prompt("Ingrese un numero del 1 al 10");
+        calcularFactorial(numeroIngresado);
+    </script>
+</head>
+<body>
+    <p><a href="../index.html">Volver</a></p>
+</body>
+</html>

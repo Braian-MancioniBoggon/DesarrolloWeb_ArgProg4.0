@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;900&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px;
+}
+
+#sectionCabecera {
+  background-image: url(../src/banner-principal.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sectionCabecera h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+}
+#sectionCabecera h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 15px 0px 35px 0px;
+}
+#sectionCabecera #contenedorTextoCabecera {
+  padding: 350px 0px;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: #22193F;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #E21982;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #E21982;
+  border: 0px;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+#menuUl {
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#sectionSomos {
+  background-color: #E8E8E8;
+}
+#sectionSomos #contenedorTextoSomos {
+  padding: 75px 0px;
+}
+#sectionSomos p {
+  margin-top: 50px;
+}
+
+#sectionFunciona {
+  background-color: #ffffff;
+}
+#sectionFunciona #contenedorTextoFunciona {
+  padding: 75px 0px;
+}
+#sectionFunciona .numeroFunciona {
+  color: #E21982;
+}
+#sectionFunciona img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#sectionAction1 {
+  background-color: #E21982;
+}
+#sectionAction1 #contenedorTextoAvtion1 {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sectionAction1 button {
+  border: solid 2px;
+  border-color: #ffffff;
+  margin-left: 35px;
+}
+#sectionAction1 h2 {
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+#sectionFAQS {
+  background-color: #E8E8E8;
+}
+#sectionFAQS #contenedorTextoFAQS {
+  padding: 75px 0px;
+}
+#sectionFAQS .paddingFAQS {
+  padding: 15px 0px;
+}
+
+#sectionAction2 {
+  background-image: url(../src/banner-secundario.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sectionAction2 #contenedorTextoAction2 {
+  padding: 200px 0px;
+}
+#sectionAction2 h2 {
+  color: #ffffff;
+  font-size: 35px;
+}
+#sectionAction2 button {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #211940;
+  color: #ffffff;
+}
+footer .menuFooter {
+  list-style: none;
+  padding: 50px 40px 50px 0px;
+}
+footer .menuRedes {
+  list-style: none;
+  padding: 50px 0px 50px 20px;
+}
+footer #contenedorMenuFooter {
+  border-bottom: solid 1px;
+  border-color: #ffffff;
+  padding: 0px;
+}
+footer ul {
+  margin-bottom: 0px;
+}
+footer #textoFinal {
+  background-color: #211940;
+  margin-bottom: 0px;
+  padding: 30px 0px;
+  font-size: 15px;
+}
+footer i {
+  font-size: 25px;
+  color: #E21982;
+}
+footer a span {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
